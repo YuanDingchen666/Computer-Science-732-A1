@@ -1,0 +1,180 @@
+@page "/"
+@using System.Net.Http.Json
+@using System.Text.Json
+@inject HttpClient Http
+
+<h1>C# API Demo Frontend</h1>
+<p>Minimal demo for GET / POST / PATCH / DELETE.</p>
+
+<label>API Base URL</label>
+<input @bind="ApiBaseUrl" placeholder="http://localhost:5000/api" />
+
+<div class="row">
+    <button @onclick="GetArticlesAsync" disabled="@Busy">GET /articles</button>
+    <button @onclick="GetCategoriesAsync" disabled="@Busy">GET /categories</button>
+</div>
+
+<h3>Create (POST)</h3>
+<input @bind="Title" placeholder="title" />
+<textarea @bind="Content" rows="3" placeholder="content"></textarea>
+<button @onclick="CreateArticleAsync" disabled="@Busy">POST /articles</button>
+
+<h3>Update/Delete by ID</h3>
+<div class="row">
+    <input @bind="TargetId" type="number" min="1" placeholder="article id" />
+    <select @bind="TargetVisibility">
+        <option value="public">public</option>
+        <option value="private">private</option>
+    </select>
+    <button @onclick="PatchArticleAsync" disabled="@Busy">PATCH /articles/:id</button>
+    <button @onclick="DeleteArticleAsync" disabled="@Busy">DELETE /articles/:id</button>
+</div>
+
+<h3>Response</h3>
+<pre>@ResponseText</pre>
+
+@code {
+    private string ApiBaseUrl { get; set; } = "http://localhost:5000/api";
+    private string Title { get; set; } = "Demo Article";
+    private string Content { get; set; } = "<p>Created from Blazor demo.</p>";
+    private int TargetId { get; set; } = 1;
+    private string TargetVisibility { get; set; } = "private";
+
+    private string ResponseText { get; set; } = "Click a button to see backend responses here.";
+    private bool Busy { get; set; }
+
+    private Task GetArticlesAsync() =>
+        RunApiAsync("GET /articles", HttpMethod.Get, "/articles");
+
+    private Task GetCategoriesAsync() =>
+        RunApiAsync("GET /categories", HttpMethod.Get, "/categories");
+
+    private Task CreateArticleAsync() =>
+        RunApiAsync(
+            "POST /articles",
+            HttpMethod.Post,
+            "/articles",
+            new
+            {
+                title = Title.Trim(),
+                content = Content.Trim(),
+                categoryId = 1,
+                thumb = "/article_thumb/screenshot1.png",
+                visibility = "public"
+            }
+        );
+
+    private Task PatchArticleAsync() =>
+        RunApiAsync(
+            "PATCH /articles/:id",
+            HttpMethod.Patch,
+            $"/articles/{TargetId}",
+            new { visibility = TargetVisibility }
+        );
+
+    private Task DeleteArticleAsync() =>
+        RunApiAsync("DELETE /articles/:id", HttpMethod.Delete, $"/articles/{TargetId}");
+
+    private async Task RunApiAsync(string label, HttpMethod method, string path, object? payload = null)
+    {
+        Busy = true;
+        try
+        {
+            var raw = await SendAsync(method, path, payload);
+            ResponseText = $"[{label}] success\n{PrettyJson(raw)}";
+        }
+        catch (Exception ex)
+        {
+            ResponseText = $"[{label}] failed\n{ex.Message}";
+        }
+        finally
+        {
+            Busy = false;
+        }
+    }
+
+    private async Task<string> SendAsync(HttpMethod method, string path, object? payload = null)
+    {
+        var request = new HttpRequestMessage(method, BuildUrl(path));
+        if (payload is not null)
+        {
+            request.Content = JsonContent.Create(payload);
+        }
+
+        using var response = await Http.SendAsync(request);
+        var body = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new InvalidOperationException($"Status {(int)response.StatusCode}: {body}");
+        }
+
+        return body;
+    }
+
+    private string BuildUrl(string path)
+    {
+        var baseUrl = ApiBaseUrl.Trim().TrimEnd('/');
+        var subPath = path.TrimStart('/');
+        return $"{baseUrl}/{subPath}";
+    }
+
+    private static string PrettyJson(string raw)
+    {
+        try
+        {
+            using var doc = JsonDocument.Parse(raw);
+            return JsonSerializer.Serialize(doc, new JsonSerializerOptions { WriteIndented = true });
+        }
+        catch
+        {
+            return raw;
+        }
+    }
+}
+
+<style>
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .row {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+
+    input, textarea, select, button {
+        font: inherit;
+        padding: 0.4rem 0.5rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin: 0.2rem 0;
+    }
+
+    button {
+        cursor: pointer;
+        background: #0d6efd;
+        border: none;
+        color: #fff;
+    }
+
+    button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    pre {
+        margin-top: 0.4rem;
+        background: #111827;
+        color: #d1fae5;
+        border-radius: 8px;
+        padding: 0.8rem;
+        max-height: 280px;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+</style>

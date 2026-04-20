@@ -1,0 +1,4 @@
+/Users/barry/Desktop/732 Assignment 1/frontend/bin/Debug/net10.0/publish/wwwroot/index.html
+/Users/barry/Desktop/732 Assignment 1/frontend/bin/Debug/net10.0/publish/frontend.runtimeconfig.json
+/Users/barry/Desktop/732 Assignment 1/frontend/bin/Debug/net10.0/publish/dotnet.js
+/Users/barry/Desktop/732 Assignment 1/frontend/bin/Debug/net10.0/publish/web.config
