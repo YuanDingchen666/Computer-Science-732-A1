@@ -1,0 +1,66 @@
+/Users/barry/Desktop/C#/bin/Debug/net10.0/C#
+/Users/barry/Desktop/C#/bin/Debug/net10.0/C#.deps.json
+/Users/barry/Desktop/C#/bin/Debug/net10.0/C#.runtimeconfig.json
+/Users/barry/Desktop/C#/bin/Debug/net10.0/C#.dll
+/Users/barry/Desktop/C#/bin/Debug/net10.0/C#.pdb
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.AssemblyInfoInputs.cache
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.AssemblyInfo.cs
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.csproj.CoreCompileInputs.cache
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.dll
+/Users/barry/Desktop/C#/obj/Debug/net10.0/refint/C#.dll
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.pdb
+/Users/barry/Desktop/C#/obj/Debug/net10.0/C#.genruntimeconfig.cache
+/Users/barry/Desktop/C#/obj/Debug/net10.0/ref/C#.dll
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.AssemblyInfoInputs.cache
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.AssemblyInfo.cs
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.csproj.CoreCompileInputs.cache
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.dll
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/refint/C#.dll
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.pdb
+/Users/barry/Desktop/732 Assignment 1/C# backend/bin/Debug/net10.0/C#.staticwebassets.endpoints.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/bin/Debug/net10.0/C#
+/Users/barry/Desktop/732 Assignment 1/C# backend/bin/Debug/net10.0/C#.deps.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/bin/Debug/net10.0/C#.runtimeconfig.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/bin/Debug/net10.0/C#.dll
+/Users/barry/Desktop/732 Assignment 1/C# backend/bin/Debug/net10.0/C#.pdb
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.MvcApplicationPartsAssemblyInfo.cache
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/scopedcss/bundle/C#.styles.css
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/staticwebassets.build.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/staticwebassets.development.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/swae.build.ex.cache
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/C#.genruntimeconfig.cache
+/Users/barry/Desktop/732 Assignment 1/C# backend/obj/Debug/net10.0/ref/C#.dll
+/Users/barry/Desktop/732 Assignment 1/backend/bin/Debug/net10.0/C#.staticwebassets.endpoints.json
+/Users/barry/Desktop/732 Assignment 1/backend/bin/Debug/net10.0/C#
+/Users/barry/Desktop/732 Assignment 1/backend/bin/Debug/net10.0/C#.deps.json
+/Users/barry/Desktop/732 Assignment 1/backend/bin/Debug/net10.0/C#.runtimeconfig.json
+/Users/barry/Desktop/732 Assignment 1/backend/bin/Debug/net10.0/C#.dll
+/Users/barry/Desktop/732 Assignment 1/backend/bin/Debug/net10.0/C#.pdb
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.AssemblyInfoInputs.cache
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.AssemblyInfo.cs
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.csproj.CoreCompileInputs.cache
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.MvcApplicationPartsAssemblyInfo.cache
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/scopedcss/bundle/C#.styles.css
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/staticwebassets.build.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/staticwebassets.development.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/swae.build.ex.cache
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.dll
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/refint/C#.dll
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.pdb
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/C#.genruntimeconfig.cache
+/Users/barry/Desktop/732 Assignment 1/backend/obj/Debug/net10.0/ref/C#.dll
